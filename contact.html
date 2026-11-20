@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Contact INSIKA MULTIHOLDINGS in Estcourt and Wembezi, KwaZulu-Natal, for loan enquiries and assistance.">
+
+    <meta name="theme-color" content="#173b2b">
+
+    <title>Contact Us | INSIKA MULTIHOLDINGS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+>
+
+
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <a href="index.html" class="logo">
+            <div class="logo-icon">IH</div>
+
+            <div>
+                <h2>INSIKA MULTIHOLDINGS</h2>
+                <p>Building Financial Opportunities</p>
+            </div>
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="loans.html">Our Loans</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="faq.html">FAQs</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="apply.html" class="mobile-apply">Apply Now</a>
+        </nav>
+
+        <a href="apply.html" class="nav-button">Apply Now</a>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="contact-hero">
+            <div class="contact-hero-overlay"></div>
+
+            <div class="contact-hero-content">
+                <span>WE ARE HERE TO HELP</span>
+                <h1>Contact Us</h1>
+                <p>Let's start a conversation about your financial needs.</p>
+            </div>
+        </section>
+
+
+        <!-- CONTACT INTRODUCTION -->
+
+        <section class="contact-section">
+
+            <div class="contact-intro">
+                <span class="section-label">GET IN TOUCH</span>
+
+                <h2>We'd Love to Hear From You</h2>
+
+                <p>
+                    Have questions or need more information about our services?
+                    Get in touch with INSIKA MULTIHOLDINGS. Our team is ready to
+                    assist you with your enquiries.
+                </p>
+            </div>
+
+
+            <div class="contact-grid">
+
+                <!-- CONTACT INFORMATION -->
+
+                <div class="contact-information">
+
+                    <div class="contact-card">
+                        <span class="contact-icon">☎</span>
+                        <h3>Call Us</h3>
+                        <p>Speak to us directly.</p>
+
+                        <a href="tel:0769788249">076 978 8249</a>
+                        <a href="tel:0712569803">071 256 9803</a>
+                    </div>
+
+
+                    <div class="contact-card">
+                        <span class="contact-icon">✉</span>
+                        <h3>Email Us</h3>
+                        <p>Send us your questions.</p>
+
+                        <a href="mailto:khumalozamantungwa70@gmail.com">
+                            khumalozamantungwa70@gmail.com
+                        </a>
+                    </div>
+
+
+                    <div class="contact-card">
+                        <span class="contact-icon">⌖</span>
+                        <h3>Our Location</h3>
+                        <p>Find us in:</p>
+
+                        <strong>
+                            Estcourt, KwaZulu-Natal, South Africa
+                        </strong>
+                    </div>
+
+
+                    <div class="contact-card whatsapp-card">
+                        <span class="contact-icon">◉</span>
+                        <h3>WhatsApp Us</h3>
+                        <p>Prefer messaging? Chat with us directly.</p>
+
+                        <a href="https://wa.me/27712569803"
+                           target="_blank"
+                           rel="noopener">
+                            Start a WhatsApp Chat →
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT FORM -->
+
+                <div class="contact-form-container">
+
+                    <span class="section-label">SEND AN ENQUIRY</span>
+
+                    <h2>Send Us a Message</h2>
+
+                    <form id="contactForm">
+
+                        <div class="form-group">
+                            <label for="contactName">Full Name</label>
+
+                            <input
+                                type="text"
+                                id="contactName"
+                                name="name"
+                                placeholder="Enter your full name"
+                                required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address</label>
+
+                            <input
+                                type="email"
+                                id="contactEmail"
+                                name="email"
+                                placeholder="Enter your email address"
+                                required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="contactPhone">Contact Number</label>
+
+                            <input
+                                type="tel"
+                                id="contactPhone"
+                                name="phone"
+                                placeholder="Enter your phone number"
+                                required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+
+                            <input
+                                type="text"
+                                id="contactSubject"
+                                name="subject"
+                                placeholder="What is your enquiry about?"
+                                required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="contactMessage">Your Message</label>
+
+                            <textarea
+                                id="contactMessage"
+                                name="message"
+                                rows="5"
+                                placeholder="Write your message here..."
+                                required></textarea>
+                        </div>
+
+
+                        <button type="submit" class="contact-submit">
+                            Send Message
+                        </button>
+
+                        <p id="contactFeedback" role="status"></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CALL TO ACTION -->
+
+<!-- LOCATION MAP -->
+
+<section class="location-section">
+
+    <div class="location-heading">
+        <span class="section-label">FIND US</span>
+        <h2>Visit INSIKA MULTIHOLDINGS</h2>
+        <p>Find our location in Estcourt, KwaZulu-Natal.</p>
+    </div>
+
+    <div id="businessMap"></div>
+
+    <div class="directions-button">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=-29.01787,29.842619"
+           target="_blank"
+           rel="noopener">
+            Get Directions →
+        </a>
+    </div>
+
+</section>
+
+
+        <section class="contact-cta">
+
+            <h2>Need Assistance?</h2>
+
+            <p>
+                Contact INSIKA MULTIHOLDINGS directly and let us help
+                you with your enquiry.
+            </p>
+
+            <a href="https://wa.me/27712569803"
+               target="_blank"
+               rel="noopener">
+                Chat With Us on WhatsApp
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">IH</div>
+
+            <h2>INSIKA MULTIHOLDINGS</h2>
+
+            <p>Building Financial Opportunities</p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="loans.html">Our Loans</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 INSIKA MULTIHOLDINGS.
+                All rights reserved.
+            </p>
+
+            <p>
+                Estcourt & Wembezi, KwaZulu-Natal.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="JAVA/main.js"></script>
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin="">
+</script>
+
+<script>
+    const businessLocation = [-29.01787, 29.842619];
+
+    const map = L.map("businessMap").setView(businessLocation, 16);
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    L.marker(businessLocation)
+        .addTo(map)
+        .bindPopup("<strong>INSIKA MULTIHOLDINGS</strong><br>Estcourt, KwaZulu-Natal")
+        .openPopup();
+</script>
+
+
+</body>
+</html>

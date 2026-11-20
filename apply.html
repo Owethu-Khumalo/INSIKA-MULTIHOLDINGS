@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Submit a loan enquiry to INSIKA MULTIHOLDINGS in Estcourt and Wembezi, KwaZulu-Natal.">
+
+    <meta name="theme-color" content="#173b2b">
+
+    <title>Apply for a Loan | INSIKA MULTIHOLDINGS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/apply.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<!-- WEBSITE NAVIGATION -->
+
+<header>
+
+    <a href="index.html" class="logo">
+        <div class="logo-icon">IH</div>
+
+        <div>
+            <h2>INSIKA MULTIHOLDINGS</h2>
+            <p>Building Financial Opportunities</p>
+        </div>
+    </a>
+
+    <button class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav id="mainNav">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="loans.html">Our Loans</a>
+
+        <a href="calculator.html">Calculator</a>
+
+        <a href="faq.html">FAQs</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="apply.html" class="mobile-apply">
+            Apply Now
+        </a>
+
+    </nav>
+
+   
+
+</header>
+
+<body>
+
+    <!-- COPY YOUR EXISTING HEADER FROM index.html HERE -->
+
+    <main>
+
+        <!-- APPLICATION HERO -->
+        <section class="apply-hero">
+            <div class="apply-hero-overlay"></div>
+
+            <div class="apply-hero-content reveal">
+                <span class="hero-label">TAKE THE NEXT STEP</span>
+
+                <h1>Loan <span>Enquiry</span></h1>
+
+                <p>
+                    Tell us a little about what you need.
+                    Our team will guide you through the next steps.
+                </p>
+
+                <a href="#application-form" class="apply-hero-btn">
+                    Start Your Enquiry
+                </a>
+            </div>
+        </section>
+
+
+        <!-- APPLICATION INTRODUCTION -->
+        <section class="apply-intro reveal">
+
+            <span class="section-label">GET STARTED WITH INSIKA</span>
+
+            <h2>Let's Discuss Your Financial Needs</h2>
+
+            <p>
+                Complete the enquiry form below with your contact
+                information and requested loan details. Our team
+                can then follow up with you about the next steps.
+            </p>
+
+        </section>
+
+
+        <!-- APPLICATION FORM -->
+        <section class="apply-section" id="application-form">
+
+            <div class="apply-layout">
+
+                <div class="apply-form-container reveal">
+
+                    <div class="apply-form-heading">
+                        <span class="section-label">LOAN ENQUIRY FORM</span>
+                        <h2>Tell Us About Your Request</h2>
+
+                        <p>
+                            Please complete the fields below.
+                            Fields marked with * are required.
+                        </p>
+                    </div>
+
+                    <form id="applicationForm">
+
+                        <div class="apply-form-grid">
+
+                            <div class="apply-field">
+                                <label for="fullName">Full Name *</label>
+
+                                <input
+                                    type="text"
+                                    id="fullName"
+                                    name="fullName"
+                                    placeholder="Enter your full name"
+                                    autocomplete="name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="apply-field">
+                                <label for="phone">Contact Number *</label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="e.g. 071 234 5678"
+                                    autocomplete="tel"
+                                    required
+                                >
+                            </div>
+
+                            <div class="apply-field">
+                                <label for="email">Email Address</label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email address"
+                                    autocomplete="email"
+                                >
+                            </div>
+
+                            <div class="apply-field">
+                                <label for="loanAmount">Requested Loan Amount (R) *</label>
+
+                                <input
+                                    type="number"
+                                    id="loanAmount"
+                                    name="loanAmount"
+                                    placeholder="e.g. 400"
+                                    min="1"
+                                    step="0.01"
+                                    required
+                                >
+                            </div>
+
+                            <div class="apply-field full-width">
+                                <label for="repaymentPeriod">Preferred Repayment Period *</label>
+
+                                <select
+                                    id="repaymentPeriod"
+                                    name="repaymentPeriod"
+                                    required
+                                >
+                                    <option value="">Select a period</option>
+                                    <option value="1">1 Month</option>
+                                    <option value="2">2 Months</option>
+                                    <option value="3">3 Months</option>
+                                    <option value="4">4 Months</option>
+                                    <option value="5">5 Months</option>
+                                    <option value="6">6 Months</option>
+                                    <option value="7">7 Months</option>
+                                    <option value="8">8 Months</option>
+                                    <option value="9">9 Months</option>
+                                    <option value="10">10 Months</option>
+                                    <option value="11">11 Months</option>
+                                    <option value="12">12 Months</option>
+                                </select>
+                            </div>
+
+                            <div class="apply-field full-width">
+                                <label for="message">Additional Information</label>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Tell us anything else you would like us to know..."
+                                ></textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="apply-consent">
+                            <label>
+                                <input type="checkbox" id="consent" required>
+
+                                <span>
+                                    I agree that INSIKA MULTIHOLDINGS may contact me
+                                    regarding this enquiry. *
+                                </span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="apply-submit-btn">
+                            Submit Loan Enquiry
+                        </button>
+
+                        <p class="apply-disclaimer">
+                            Submitting an enquiry does not guarantee
+                            loan approval. Any application is subject
+                            to the business's assessment and applicable
+                            lending requirements.
+                        </p>
+
+                    </form>
+
+                </div>
+
+
+                <!-- INFORMATION PANEL -->
+                <aside class="apply-side-panel reveal">
+
+                    <span class="section-label">WHAT HAPPENS NEXT?</span>
+
+                    <h2>Your Enquiry Journey</h2>
+
+                    <div class="apply-step">
+                        <span>01</span>
+
+                        <div>
+                            <h3>Submit Your Enquiry</h3>
+                            <p>
+                                Provide your contact details and
+                                requested loan information.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="apply-step">
+                        <span>02</span>
+
+                        <div>
+                            <h3>Our Team Gets in Touch</h3>
+                            <p>
+                                We can contact you to discuss
+                                your enquiry and explain the next steps.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="apply-step">
+                        <span>03</span>
+
+                        <div>
+                            <h3>Application Assessment</h3>
+                            <p>
+                                Any formal application will be
+                                assessed according to applicable
+                                requirements.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="apply-contact-box">
+                        <h3>Need Assistance?</h3>
+
+                        <p>
+                            Have questions before submitting
+                            your enquiry?
+                        </p>
+
+                        <a href="contact.html">
+                            Contact INSIKA MULTIHOLDINGS →
+                        </a>
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- COPY YOUR EXISTING FOOTER FROM index.html HERE -->
+
+    <script src="JAVA/main.js"></script>
+
+</body>
+</html>

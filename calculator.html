@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Use the INSIKA MULTIHOLDINGS loan calculator to estimate monthly repayments.">
+    <meta name="theme-color" content="#173b2b">
+
+    <title>Loan Calculator | INSIKA MULTIHOLDINGS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calculator.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<!-- WEBSITE NAVIGATION -->
+
+<header>
+
+    <a href="index.html" class="logo">
+        <div class="logo-icon">IH</div>
+
+        <div>
+            <h2>INSIKA MULTIHOLDINGS</h2>
+            <p>Building Financial Opportunities</p>
+        </div>
+    </a>
+
+    <button class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav id="mainNav">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="loans.html">Our Loans</a>
+
+        <a href="calculator.html">Calculator</a>
+
+        <a href="faq.html">FAQs</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="apply.html" class="mobile-apply">
+            Apply Now
+        </a>
+
+    </nav>
+
+    <a href="apply.html" class="nav-button">
+        Apply Now
+    </a>
+
+</header>
+
+
+<body>
+
+    <!-- COPY YOUR EXISTING HEADER FROM index.html HERE -->
+
+    <main>
+
+        <section class="calculator-hero">
+            <div class="calculator-hero-overlay"></div>
+
+            <div class="calculator-hero-content reveal">
+                <span class="hero-label">PLAN WITH CONFIDENCE</span>
+                <h1>Loan <span>Calculator</span></h1>
+
+                <p>
+                    Estimate your monthly repayments by entering
+                    your preferred loan amount and repayment period.
+                </p>
+            </div>
+        </section>
+
+        <section class="calculator-section">
+
+            <div class="calculator-heading reveal">
+                <span class="section-label">ESTIMATE YOUR REPAYMENTS</span>
+                <h2>Calculate Your Loan</h2>
+
+                <p>
+                    Enter your loan details below to calculate
+                    your estimated repayment.
+                </p>
+            </div>
+
+            <div class="calculator-layout">
+
+                <div class="calculator-form reveal">
+
+                    <form id="loanCalculator">
+
+                        <div class="calculator-field">
+                            <label for="loanAmount">Loan Amount (R)</label>
+
+                            <input
+                                type="number"
+                                id="loanAmount"
+                                placeholder="e.g. 400"
+                                min="1"
+                                step="0.01"
+                                required
+                            >
+                        </div>
+
+                        <div class="calculator-field">
+                            <label for="repaymentPeriod">
+                                Repayment Period
+                            </label>
+
+                            <select id="repaymentPeriod" required>
+                                <option value="">Select repayment period</option>
+                                <option value="1">1 Month</option>
+                                <option value="2">2 Months</option>
+                                <option value="3">3 Months</option>
+                                <option value="4">4 Months</option>
+                                <option value="5">5 Months</option>
+                                <option value="6">6 Months</option>
+                                <option value="7">7 Months</option>
+                                <option value="8">8 Months</option>
+                                <option value="9">9 Months</option>
+                                <option value="10">10 Months</option>
+                                <option value="11">11 Months</option>
+                                <option value="12">12 Months</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="calculate-btn">
+                            Calculate Repayment
+                        </button>
+
+                        <button type="reset" class="reset-btn">
+                            Clear Calculator
+                        </button>
+
+                    </form>
+
+                    <p id="calculatorError" class="calculator-error" role="alert"></p>
+
+                </div>
+
+                <div class="calculator-result reveal">
+
+                    <span class="result-label">YOUR ESTIMATED REPAYMENT</span>
+
+                    <h3>Monthly Instalment</h3>
+
+                    <div class="monthly-amount" id="monthlyPayment">
+                        R0.00
+                    </div>
+
+                    <div class="result-divider"></div>
+
+                    <div class="result-row">
+                        <span>Loan Amount</span>
+                        <strong id="resultLoanAmount">R0.00</strong>
+                    </div>
+
+                    <div class="result-row">
+                        <span>Total Estimated Interest</span>
+                        <strong id="totalInterest">R0.00</strong>
+                    </div>
+
+                    <div class="result-row">
+                        <span>Total Estimated Repayment</span>
+                        <strong id="totalRepayment">R0.00</strong>
+                    </div>
+
+                    <div class="result-row">
+                        <span>Repayment Period</span>
+                        <strong id="resultTerm">0 Months</strong>
+                    </div>
+
+                    <p class="result-note">
+                        These figures are estimates only and do not
+                        represent an approved loan offer or quotation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="calculator-information reveal">
+
+            <span class="section-label">PLEASE NOTE</span>
+
+            <h2>Understanding Your Estimate</h2>
+
+            <p>
+                The calculator provides an illustrative repayment
+                estimate based on the information entered.
+            </p>
+
+            <p>
+                Actual repayment amounts depend on the applicable
+                loan agreement, charges and repayment conditions.
+                Contact INSIKA MULTIHOLDINGS for confirmed information.
+            </p>
+
+            <a href="contact.html" class="calculator-contact-link">
+                Contact Our Team →
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- COPY YOUR EXISTING FOOTER FROM index.html HERE -->
+
+    <script src="JAVA/main.js"></script>
+    <script src="JAVA/calculator.js"></script>
+
+</body>
+</html>

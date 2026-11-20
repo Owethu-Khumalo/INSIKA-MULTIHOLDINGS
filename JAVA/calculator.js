@@ -1,14 +1,10 @@
 
-// =====================================
-// INSIKA MULTIHOLDINGS - LOAN CALCULATOR
-// =====================================
+ // =====================================
+ // INSIKA MULTIHOLDINGS - LOAN CALCULATOR
+ // =====================================
 
 // Fixed monthly interest rate
 const MONTHLY_INTEREST_RATE = 0.40;
-
-// =====================================
-// LOAN CALCULATOR
-// =====================================
 
 const calculatorForm = document.getElementById("loanCalculator");
 
@@ -25,6 +21,7 @@ if (calculatorForm) {
 
     const calculatorError = document.getElementById("calculatorError");
 
+    // Format amounts as South African Rand
     function formatCurrency(amount) {
         return new Intl.NumberFormat("en-ZA", {
             style: "currency",
@@ -32,6 +29,7 @@ if (calculatorForm) {
         }).format(amount);
     }
 
+    // Calculate loan repayment
     calculatorForm.addEventListener("submit", function(event) {
 
         event.preventDefault();
@@ -41,11 +39,13 @@ if (calculatorForm) {
 
         calculatorError.textContent = "";
 
+        // Validate inputs
         if (
             loanAmountInput.value.trim() === "" ||
             repaymentPeriodInput.value === ""
         ) {
-            calculatorError.textContent = "Please complete all fields.";
+            calculatorError.textContent =
+                "Please complete all fields.";
             return;
         }
 
@@ -61,14 +61,23 @@ if (calculatorForm) {
             return;
         }
 
+        // Calculate 40% interest on the original amount each month
         const monthlyInterest = principal * MONTHLY_INTEREST_RATE;
+
         const interestAmount = monthlyInterest * months;
+
         const totalAmount = principal + interestAmount;
+
+        // Divide total repayment into equal monthly instalments
         const monthlyAmount = totalAmount / months;
 
+        // Display results
         monthlyPayment.textContent = formatCurrency(monthlyAmount);
+
         resultLoanAmount.textContent = formatCurrency(principal);
+
         totalInterest.textContent = formatCurrency(interestAmount);
+
         totalRepayment.textContent = formatCurrency(totalAmount);
 
         resultTerm.textContent =
@@ -76,6 +85,7 @@ if (calculatorForm) {
 
     });
 
+    // Reset calculator
     calculatorForm.addEventListener("reset", function() {
 
         calculatorError.textContent = "";
@@ -87,13 +97,6 @@ if (calculatorForm) {
         resultTerm.textContent = "0 Months";
 
     });
-
-}
-
-
-// =====================================
-// APPLY NOW - APPLICATION FORM
-// =====================================
 
 const applicationForm = document.getElementById("applicationForm");
 
@@ -123,9 +126,7 @@ if (applicationForm) {
 
             if (result.success) {
 
-                feedback.textContent =
-                    "Your loan enquiry has been submitted successfully!";
-
+                feedback.textContent = "Your loan enquiry has been submitted successfully!";
                 feedback.style.color = "green";
 
                 applicationForm.reset();
@@ -138,9 +139,7 @@ if (applicationForm) {
 
         } catch (error) {
 
-            feedback.textContent =
-                "Unable to submit your enquiry. Please try again.";
-
+            feedback.textContent = "Unable to submit your enquiry. Please try again.";
             feedback.style.color = "red";
 
             console.error(error);
@@ -153,5 +152,8 @@ if (applicationForm) {
         }
 
     });
+
+}
+
 
 }

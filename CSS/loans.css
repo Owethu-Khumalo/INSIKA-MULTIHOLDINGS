@@ -355,3 +355,112 @@
     }
 
 }
+
+/* ==========================================
+   PREMIUM INSIKA BRAND IDENTITY
+========================================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.logo-icon {
+    width: 59px;
+    height: 59px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--antique-gold);
+    background: var(--dark-green);
+    box-shadow: 0 5px 15px rgba(23, 59, 43, 0.12);
+    transition: all 0.35s ease;
+}
+
+.logo-icon span {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.65rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    color: var(--antique-gold);
+}
+
+.logo-icon-line {
+    position: absolute;
+    bottom: 7px;
+    width: 24px;
+    height: 1px;
+    background: var(--cream);
+}
+
+.logo:hover .logo-icon {
+    transform: rotate(-5deg);
+    box-shadow: 0 8px 22px rgba(176, 139, 69, 0.25);
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.logo-text h2 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1.1;
+    color: var(--dark-green);
+}
+
+.logo-subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.67rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: var(--antique-gold);
+}
+
+.logo-text p {
+    margin: 4px 0 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.53rem;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    color: var(--text);
+}
+
+@media (max-width: 600px) {
+
+    .logo {
+        gap: 10px;
+    }
+
+    .logo-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .logo-icon span {
+        font-size: 1.4rem;
+    }
+
+    .logo-text h2 {
+        font-size: 1.12rem;
+    }
+
+    .logo-subtitle {
+        font-size: 0.58rem;
+        letter-spacing: 3px;
+    }
+
+    .logo-text p {
+        font-size: 0.43rem;
+        letter-spacing: 0.6px;
+    }
+
+}
